@@ -1,0 +1,95 @@
+@font-face {
+font-family: 'sf_compact_displaybold';
+src: url('fonts/sf-compact-display-bold.eot'); /* IE9 Compat Modes */
+  src: url('fonts/sf-compact-display-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/sf-compact-display-bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/sf-compact-display-bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/sf-compact-display-bold.otf') format('opentype'),
+       url('fonts/sf-compact-display-bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/sf-compact-display-bold.svg#svgsf-compact-display-bold') format('svg'); /* Legacy iOS */
+}
+
+
+@font-face {
+font-family: sf_compact_displayregular;
+src: url('fonts/sf-compact-display-regular.eot'); /* IE9 Compat Modes */
+  src: url('fonts/sf-compact-display-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/sf-compact-display-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/sf-compact-display-regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/sf-compact-display-regular.otf') format('opentype'),
+       url('fonts/sf-compact-display-regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/sf-compact-display-regular.svg#svgsf-compact-display-regular') format('svg'); /* Legacy iOS */
+}
+
+@bigfont : #f95b53;
+@font : 'sf_compact_displayregular';
+.centre{
+  text-align: center;
+}
+
+img{
+  width: 100%;
+  height:auto;
+  border: 0;
+}
+
+.stddiv{
+  max-width: auto;
+  .centre;
+  font-family: @font;
+}
+
+.p1{
+    color: @bigfont;
+    font-size: 70px;
+    font-family: 'sf_compact_displaybold', serif;
+    margin-bottom: 0;
+    margin-top: 45px;
+}
+
+.p2{
+  font-size: 25px;
+  font-family: @font, serif;
+}
+
+#button{
+    background-color: white;
+
+a:link, a:visited {
+    color: @bigfont;
+    .p2;
+    border: 5px solid @bigfont;
+    padding: 20px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 50px;
+}
+
+a:hover, a:active {
+    background-color: red;
+    color: white;
+}
+}
+
+#button1{
+  margin-top: 20px;
+  a:link{
+  .p2;
+  text-decoration: none;
+  color: grey;
+
+  }
+}
+
+input[type=text] {
+    width: 700px;
+    font-family: @font;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 30px;
+    background-color: white;
+    padding: 28px 5px 28px 40px;
+    resize: none;
+}
